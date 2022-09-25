@@ -4,9 +4,193 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./js/script.js"></script>
     <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+      body {
+        margin: 24px;
+      }
+
+      .is-hidden {
+        display: none;
+      }
+
+      .usernames li {
+        padding: 8px;
+        border: 2px dashed tomato;
+        text-transform: uppercase;
+      }
+
+      .usernames li:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      .accent {
+        color: tomato;
+        text-decoration: underline;
+      }
+
+      .list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      .list-item {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-width: 2px;
+        border-style: dashed;
+      }
+
+      .list-item.new::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+        border-radius: 50%;
+        background-color: green;
+      }
+
+      .list-item:nth-child(even) {
+        border-color: tomato;
+      }
+
+      .list-item:nth-child(odd) {
+        border-color: blueviolet;
+      }
+
+      .list-item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    </style>
   </head>
   <body>
-    <script src="./js/script.js"></script>
+    <!-- <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth item</li>
+      <li>Fifth item</li>
+    </ul>
+
+    <ul id="menu" class="menu">
+      <li class="menu-item">home</li>
+      <li class="menu-item">about</li>
+      <li class="menu-item">gallery</li>
+      <li>blog</li>
+    </ul>
+
+    <textarea id="message" class="materialize-textarea" rows="5">
+Default textarea message</textarea
+    >
+
+    <div>
+      <a href="/home" class="btn">home</a>
+      <a href="/about" class="btn active">about</a>
+      <a href="/gallery" class="btn">gallery</a>
+    </div>
+
+    <br />
+    <img
+      class="image"
+      src="https://placeimg.com/640/480/animals"
+      alt=""
+      width="320"
+    />
+
+    <article class="article">
+      <h2 class="article-title">Welcome to Hawaii!</h2>
+      <p class="article-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        quaerat nemo veritatis quasi eius eum aliquid, nobis dolore nisi, magnam
+        eaque iusto, necessitatibus atque laborum quam tempora ducimus dicta
+        ipsam.
+      </p>
+    </article> -->
+
+    <!-- <p id="paragraph" class="text red big">
+      Proin magna. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam
+      libero, non adipiscing dolor urna a orci. Etiam rhoncus. Donec mi odio,
+      faucibus at, scelerisque quis, convallis in, nisi.
+    </p> -->
+
+    <!-- <img
+      class="image"
+      src="https://placeimg.com/400/200/nature"
+      alt="Beautiful nature"
+    /> -->
+
+    <!-- <div class="editor">
+      <p>
+        Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu
+        nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit
+        suscipit tellus. Phasellus gravida semper nisi.
+      </p>
+      <div class="actions">
+        <button type="button" class="btn" data-action="save">Save</button>
+        <button type="button" class="btn" data-action="close">Close</button>
+      </div>
+    </div>
+
+    <ul class="dishes">
+      <li data-id="14">Baked Yak &amp; Mushrooms</li>
+      <li data-id="7">Strawberry Pancakes</li>
+      <li data-id="3">Caramel Toffee</li>
+      <li data-id="61">Pistachio Elderberry Wafer</li>
+    </ul> -->
+
+    <!-- <div class="container">
+      <ul class="usernames">
+        <li>Mango</li>
+      </ul>
+    </div> -->
+
+    <!-- <article class="article">
+      <h2 class="title">Article title</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa
+        quibusdam! <strong>Praesentium</strong> accusantium fugiat distinctio
+        quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque
+        explicabo perspiciatis, consectetur non.
+      </p>
+      <a class="link" href="">Read more</a>
+    </article> -->
+
+    <!-- <article class="article">
+      <h2 class="title">Article title</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa
+        quibusdam! <strong>Praesentium</strong> accusantium fugiat distinctio
+        quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque
+        explicabo perspiciatis, consectetur non.
+      </p>
+      <a class="link" href="">Read more</a>
+    </article> -->
+
+    <!-- <section>
+      <h2>Popular technologies</h2>
+      <ul class="list"></ul>
+    </section>
+    
+    <article class="article">
+      <h2>Article title</h2>
+    </article> -->
+
+    <!-- <ul class="list">
+      <li class="list-item">HTML</li>
+      <li class="list-item">CSS</li>
+      <li class="list-item">JavaScript</li>
+    </ul> -->
   </body>
 </html>
