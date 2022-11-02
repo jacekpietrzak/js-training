@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  padding: 60px;
+}
+
+h1,
+h2 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dark {
+  background-color: #111;
+  color: #999;
+}
+
+.light {
+  background-color: #999;
+  color: #111;
+}
