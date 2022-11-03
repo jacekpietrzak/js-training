@@ -1,4 +1,3 @@
-import { log } from "console";
 import "./css/index.css";
 
 /** funkcja do symulowania odpowiedzi z serwera */
@@ -30,20 +29,26 @@ const promise = new Promise((resolve, reject) => {
 /** metoda .then()
  * pierwszy argument przyjmuje funkcje onFulfilled ktora sie wykona jesli ta obietnica sie spelni. Do tej funkcji moge przekazac argument. Ten argument jest wartoscia ktora nam zwraca promise. Drugim argumentem bedzie funkcja onRejected ktora wykona sie jesli obietnica sie nie spelni. Tutaj tez moge przekazac wartosc z promise dla reject. Obsluguje blad i dzieki temu nie bedzie bledu w konsoli i aplikacja bedzie dzialac dalej a my mozemy ladnie przekazac uzytkownikowi ze cos poszlo nie tak. Then mozemy chainowac tzn po jednym then mozemy dodac kolejny then. => promise.then(resolved, rejected).then(resolved, rejected)
  */
+/** jest jeszcze jedna metoda finally. Tez jako argument bieze funkcje. Ona nie bierze wartosci i wywoluje sie zawsze. Nie wzne czy mamy sukcess czy nie. Finally daje nam sposob na to zeby poczekac na odpowiedz i bezwzgledu na to jaki bedzie jej wynik, mozemy cos zrobic. */
 
 promise
   .then(
     (value /** dowolne slowo. Zwrot z resolved */) => {
       console.log("This is THEN resolved value: ", value); // chainowanie then polega na kolejnym sprawdzeniu, czegos co juz mamy sprawdzone. To co nam zwroci to Then mozemy przekazac asynchronicznie do kolejnego then.
       return value + "We are very happy!";
-    },
-    (value /** dowolne slowo. Zwrot z rejected */) => {
-      console.log("There is something wrong: ", value);
     }
+    // (error /** dowolne slowo. Zwrot z rejected */) => {
+    //   console.log("There is something wrong: ", error);
+    // }
   )
-  .then((resolved) => {
-    console.log("Second then: ", resolved);
+  .then((value) => {
+    console.log("Second then: ", value);
   })
-  .catch((value) => {
-    console.log("value");
+  .catch((error) => {
+    console.log("This is my catch error: ", error);
+  })
+  .finally(() => {
+    console.log("this is finally method for promise at the end");
   });
+
+/** */
