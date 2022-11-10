@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  padding: 60px;
+}
+
+h1,
+h2 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.listItem {
+  margin-bottom: 15px;
+}
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
