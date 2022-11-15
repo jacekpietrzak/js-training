@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px;
+}
+
+.listItem {
+  background-color: rgb(244, 244, 244);
+}
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: large;
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+  cursor: pointer;
+}
+.rocketsList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rocketDetails {
+  padding: 10px;
+  /* background-color: aliceblue; */
+}
+
+.gallery {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  list-style: none;
+  padding: 24px 0;
+}
