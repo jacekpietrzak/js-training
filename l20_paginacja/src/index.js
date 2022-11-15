@@ -88,6 +88,7 @@ loadMorePostsButton.addEventListener("click", () => {
     .then((posts) => {
       let allPostsNumber = posts.length;
       console.log("All posts: ", posts.length);
+      
       const maxPageNumber = posts.length / POSTS_PER_PAGE;
       const maxPageNumberRoundUp = Math.ceil(maxPageNumber);
       console.log("maxPageNumberRoundUp: ", maxPageNumberRoundUp);
